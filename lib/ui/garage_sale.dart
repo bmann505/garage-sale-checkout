@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'seller.dart';
 
 
 class GarageSale extends StatefulWidget {
@@ -19,6 +20,12 @@ class GarageSaleState extends State<GarageSale>{
         backgroundColor: Colors.blueGrey,
         centerTitle: true,
       ),
+      body: new Row(
+        children: <Widget>[
+          new Seller(),
+
+        ],
+      )
     );
   }
 
