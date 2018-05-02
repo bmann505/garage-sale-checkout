@@ -22,7 +22,11 @@ class GarageSaleState extends State<GarageSale>{
       ),
       body: new Row(
         children: <Widget>[
-          new Seller(),
+          new Column(
+            children: <Widget>[
+              new Seller(),
+            ],
+          ),
 
         ],
       )
