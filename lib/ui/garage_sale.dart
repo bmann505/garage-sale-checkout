@@ -24,7 +24,9 @@ class GarageSaleState extends State<GarageSale>{
         children: <Widget>[
           new Column(
             children: <Widget>[
-              new Seller(),
+              new Seller(Colors.blueAccent, false, 'Seller A', 0, 0.00),
+              new Seller(Colors.redAccent, false, 'Seller B', 0, 0.00),
+              new Seller(Colors.greenAccent, false, 'Seller C', 0, 0.00),
             ],
           ),
 

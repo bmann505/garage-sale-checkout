@@ -1,22 +1,33 @@
 import 'package:flutter/material.dart';
 
 class Seller extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    return new SellerState();
-  }
-
-}
-
-class SellerState extends State<Seller> {
-  var _containerColor = Colors.blueAccent;
+  var _containerColor;
   bool _checkBoxValue = false;
   String _sellerName = 'Seller';
   int _soldItems = 0;
   double _sellerMoney = 0.00;
 
+  @override
+  State<StatefulWidget> createState() {
+    return new SellerState(_containerColor, _checkBoxValue, _sellerName, _soldItems, _sellerMoney);
+  }
+
+  Seller(this._containerColor, this._checkBoxValue, this._sellerName,
+      this._soldItems, this._sellerMoney);
 
 
+}
+
+class SellerState extends State<Seller> {
+  var _containerColor;
+  bool _checkBoxValue = false;
+  String _sellerName;
+  int _soldItems = 0;
+  double _sellerMoney = 0.00;
+
+
+  SellerState(this._containerColor, this._checkBoxValue, this._sellerName,
+      this._soldItems, this._sellerMoney);
 
   @override
   Widget build(BuildContext context) {
