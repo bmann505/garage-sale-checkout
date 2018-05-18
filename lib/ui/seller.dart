@@ -32,33 +32,34 @@ class SellerState extends State<Seller> {
   @override
   Widget build(BuildContext context) {
     return new Column(
-      children: <Widget>[
-        new Container(
-            color: _containerColor,
-            height: 67.2,
-            width: 250.0,
-            child: new Row(
-              children: <Widget>[
-                new Checkbox(value: _checkBoxValue,
-                    onChanged: (bool newValue) {
-                      setState(() {
-                        _checkBoxValue = newValue;
-                      });
-                    }),
-                new Container(
-                    height: 30.0,
-                    width: 100.0,
-                    child: new TextField(
-                      decoration: new InputDecoration(
-                        hintText: _sellerName,
-                      ),
-                    )
-                )
-              ],
-            )
-        ),
-      ],
-    );
+        children: <Widget>[
+          new Container(
+              color: _containerColor,
+              height: 67.2,
+              width: 300.0,
+              child: new Row(
+                children: <Widget>[
+                  new Checkbox(value: _checkBoxValue,
+                      onChanged: (bool newValue) {
+                        setState(() {
+                          _checkBoxValue = newValue;
+                        });
+                      }),
+                  new Container(
+                      height: 30.0,
+                      width: 200.0,
+                      child: new TextField(
+                        decoration: new InputDecoration(
+                          hintText: _sellerName,
+                        ),
+                      )
+                  )
+                ],
+              )
+          ),
+        ],
+      );
+
   }
 
 }

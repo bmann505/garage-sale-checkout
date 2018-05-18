@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'seller.dart';
+import 'sell_price.dart';
 
 
 class GarageSale extends StatefulWidget {
@@ -26,7 +27,19 @@ class GarageSaleState extends State<GarageSale>{
             children: <Widget>[
               new Seller(Colors.blueAccent, false, 'Seller A', 0, 0.00),
               new Seller(Colors.redAccent, false, 'Seller B', 0, 0.00),
-              new Seller(Colors.greenAccent, false, 'Seller C', 0, 0.00),
+              new Seller(Colors.yellowAccent, false, 'Seller C', 0, 0.00),
+              new Seller(Colors.deepPurpleAccent, false, 'Seller D', 0, 0.00),
+              new Seller(Colors.lightBlueAccent, false, 'Seller E', 0, 0.00),
+              new Seller(Colors.lightGreenAccent, false, 'Seller F', 0, 0.00),
+              new Seller(Colors.orangeAccent, false, 'Seller G', 0, 0.00),
+              new Seller(Colors.pinkAccent, false, 'Seller H', 0, 0.00),
+              new Seller(Colors.white70, false, 'Seller I', 0, 0.00),
+              new Seller(Colors.amberAccent, false, 'Seller J', 0, 0.00),
+            ],
+          ),
+          new Column(
+            children: <Widget>[
+              new SellPrice(),
             ],
           ),
 
